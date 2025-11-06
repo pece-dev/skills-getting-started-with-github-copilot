@@ -73,8 +73,8 @@ section h3 {
 }
 
 .participants-list {
-  list-style: disc;
-  margin: 8px 0 0 18px;
+  list-style: none;
+  margin: 8px 0 0 0;
   padding: 0;
 }
 
@@ -82,6 +82,32 @@ section h3 {
   margin-bottom: 6px;
   color: #444;
   font-size: 14px;
+}
+
+/* Participant item layout and delete button */
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.participant-email {
+  word-break: break-all;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 .no-participants {
